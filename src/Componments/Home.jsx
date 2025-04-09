@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, {useEffect, useState } from 'react'
 import Header from './Header';
 import { Link } from 'react-router-dom';
 import { addcart } from '../Slice/cart';

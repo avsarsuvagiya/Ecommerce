@@ -4,7 +4,6 @@ import { Route, Routes, } from 'react-router-dom';
 import Home from './Componments/Home';
 import ProductDetails from './Componments/ProductDetails';
 import Cart from './Componments/Cart';
-import { useSelector, useDispatch } from "react-redux";
 
 
 import { createContext } from 'react';
