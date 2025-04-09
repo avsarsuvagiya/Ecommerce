@@ -269,3 +269,36 @@ li{
   text-decoration: underline;
   color: #adb5bd;
 }
+
+.multiimg img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 576px) {
+  .multiimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .multiimg img {
+    width: 70px;
+    height: 70px;
+  }
+  .table td, .table th {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .quantity-controls button {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .quantity-controls span {
+    min-width: 30px;
+    display: inline-block;
+  }
+}
