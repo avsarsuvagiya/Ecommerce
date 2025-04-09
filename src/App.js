@@ -20,7 +20,6 @@ function App() {
         <Route path="/pro/:productId" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
-      {/* <Form/> */}
     </div>
   );
 }
