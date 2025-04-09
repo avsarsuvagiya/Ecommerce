@@ -3,6 +3,7 @@ import Header from './Header';
 import { Link } from 'react-router-dom';
 import { addcart } from '../Slice/cart';
 import { useDispatch } from 'react-redux';
+import Footer from './Footer';
 
 
 
@@ -34,9 +35,9 @@ const Home = () => {
         <div className="">
             <Header />
 
-            <div className="container-fluid main_content mt-4">
+            <div className="container-fluid main_content mt-4 cate_item">
                 <div className="mb-3 d-flex flex-column flex-md-row justify-content-between align-items-center">
-                    <h3 className="text-capitalize">{catlog}</h3>
+                    <h3 className="text-capitalize mx-3">{catlog}</h3>
                     <input
                         type="text"
                         className="form-control w-100 w-md-50"
@@ -48,7 +49,7 @@ const Home = () => {
                 <div className="row">
                     {/* Category Sidebar */}
                     <div className="col-lg-3 slidebar mb-3 ">
-                        <div className="bg-light p-3 rounded shadow-sm">
+                        <div className="bg-light p-3 rounded shadow-sm slidebar1">
                             <h5 className="text-center">Category</h5>
                             <ul className="list-group">
                                 {category.map((item, i) => (
@@ -64,11 +65,11 @@ const Home = () => {
                     </div>
 
                     {/* Product Area */}
-                    <div className="col-lg-9   beauty_pro">
+                    <div className="col-lg-9  beauty_pro">
 
-                        <div className="row cate">
+                        <div className="row m-2">
                             {searchproducts.map((item, i) => (
-                                <div className="col-lg-4 col-sm-6 col-12 mb-4" key={i}>
+                                <div className="col-lg-4 col-sm-6 col-12 mb-4 cate" key={i}>
                                     <div className="card h-100 shadow-sm ">
                                         <img
                                             src={item.images?.[0]}
@@ -105,7 +106,7 @@ const Home = () => {
                 </div>
             </div>
 
-
+            <Footer/>
         </div>
     );
 }
